@@ -1,0 +1,58 @@
+@import "../../colours/colours.scss";
+
+.hero {
+  position: relative;
+  height: 65.25rem; /* Equivalent to 500px (500px / 16px = 31.25rem) */
+  overflow: hidden;
+
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($primary-light-black, 0.8),
+        rgba($primary-black, 0.8)
+      ),
+      url("https://www.compass.com/m/c5fe6428c8194fd88a4254fcc389d9cceed6ef47_img_0_1d95e/origin.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .hero-title {
+      font-size: 4.25rem;
+      color: rgba($primary-orange, 0.8);
+    }
+
+    .hero-description {
+      font-size: 2.125rem; /* Equivalent to 18px (18px / 16px = 1.125rem) */
+      color: rgba($primary-light, 0.8); /* Text color */
+      margin-top: 1.25rem; /* Equivalent to 20px (20px / 16px = 1.25rem) */
+    }
+  }
+}
+
+// Media queries for responsiveness
+@media (max-width: 48rem) {
+  .hero-content {
+    .hero-title {
+      font-size: 2.2rem !important;
+    }
+
+    .hero-description {
+      font-size: 1.4rem !important;
+      margin-top: 0.625rem;
+    }
+  }
+}

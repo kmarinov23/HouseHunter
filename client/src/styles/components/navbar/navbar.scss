@@ -1,0 +1,82 @@
+@import "../../colours/colours.scss";
+
+nav {
+  background-color: $primary-black;
+  color: $primary-light;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-family: "Lato";
+
+  .logo img {
+    max-height: 4rem;
+  }
+
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2.4rem;
+
+    &.active {
+      color: $primary-orange;
+    }
+  }
+
+  .menu {
+    display: flex;
+    padding: 0;
+
+    li {
+      margin: 0 2rem;
+
+      a {
+        text-decoration: none;
+        color: $primary-light;
+        font-weight: bold;
+        transition: color 0.3s;
+        font-size: 1.4rem;
+
+        &:hover {
+          color: $primary-orange;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      position: absolute;
+      top: 6rem;
+      left: 0;
+      right: 0;
+      background-color: $primary-black;
+      text-align: center;
+      display: none;
+
+      li {
+        margin: 1rem 0;
+      }
+    }
+
+    &.active {
+      .menu {
+        display: flex;
+      }
+
+      + .menu-toggle {
+        display: none;
+      }
+    }
+
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      cursor: pointer;
+    }
+  }
+}
