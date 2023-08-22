@@ -4,6 +4,7 @@ import NavigationBar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import WhyChooseUs from "./components/WhyUs/WhyUs";
 import WebFont from 'webfontloader';
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <NavigationBar />
     <Hero />
     <WhyChooseUs />
+    <Footer />
   </div>;
 }
 
