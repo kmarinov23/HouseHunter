@@ -121,15 +121,16 @@ nav .menu li a:hover {
   nav .menu {
     flex-direction: column;
     position: absolute;
-    top: 6rem;
+    top: 60px;
     left: 0;
     right: 0;
-    background-color: #17181d;
+    background-color: #333;
     text-align: center;
     display: none;
+    z-index: 1;
   }
   nav .menu li {
-    margin: 1rem 0;
+    margin: 10px 0;
   }
   nav.active .menu {
     display: flex;
@@ -140,8 +141,8 @@ nav .menu li a:hover {
   nav .menu-toggle {
     display: block;
     position: absolute;
-    top: 1rem;
-    right: 2rem;
+    top: 10px;
+    right: 20px;
     cursor: pointer;
   }
 }
@@ -189,9 +190,66 @@ nav .menu li a:hover {
     margin-top: 0.625rem;
   }
 }
+.why-choose-us {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.why-choose-us .section-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.why-choose-us .box {
+  flex: 0 1 calc(33.33% - 2rem);
+  background: linear-gradient(100deg, #2c2c2c, #404040, #2c2c2c, #404040);
+  background-size: 400% 400% !important;
+  animation: gradient 15s ease infinite;
+  border: 1px solid #999999;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin: 5rem 1rem 1rem 1rem;
+  text-align: center;
+}
+.why-choose-us .box h3 {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+  color: #e09145;
+}
+.why-choose-us .box p {
+  font-size: 1.2rem;
+  color: #fcd9b8;
+}
+.why-choose-us .box .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto 1rem;
+}
+.why-choose-us .box .icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+@media (max-width: 768px) {
+  .why-choose-us {
+    flex-direction: column;
+    align-items: center;
+  }
+  .why-choose-us .box {
+    width: 100%;
+  }
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  font-family: "Lato";
+  background-color: #999999;
 }
 
 /*# sourceMappingURL=main.css.map */

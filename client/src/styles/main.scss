@@ -1,8 +1,11 @@
 @import "./reset.scss";
 @import "./components/navbar/navbar.scss";
 @import "./components/hero/hero.scss";
+@import "./components/whyUs/whyUs.scss";
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  font-family: "Lato";
+  background-color: #999999;
 }

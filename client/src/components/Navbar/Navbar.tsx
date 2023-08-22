@@ -1,15 +1,7 @@
 import { useEffect, useState } from 'react';
-import logo from "../logo.png"
-import WebFont from 'webfontloader';
+import logo from "../../logo.png"
 
 function NavigationBar() {
-    useEffect(() => {
-        WebFont.load({
-            google: {
-                families: ['Lato']
-            }
-        });
-    }, []);
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
