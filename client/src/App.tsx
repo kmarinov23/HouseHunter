@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import WhyChooseUs from "./components/WhyUs/WhyUs";
 import WebFont from 'webfontloader';
 import Footer from "./components/Footer/Footer";
+import RealEstateList from "./components/RecentlyAdded/RecentlyAdded";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <NavigationBar />
     <Hero />
     <WhyChooseUs />
+    <RealEstateList />
     <Footer />
   </div>;
 }

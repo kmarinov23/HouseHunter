@@ -1,0 +1,56 @@
+.real-estate-list {
+  text-align: center;
+
+  h2 {
+    font-size: 1.5rem; // 15px (1.5 * base-font-size)
+    margin-bottom: 2rem; // 20px converted to rem
+  }
+
+  .real-estate-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .real-estate-card {
+    width: calc(33.33% - 2rem); // 20px converted to rem
+    margin: 1rem; // 10px converted to rem
+    padding: 2rem; // 20px converted to rem
+    background-color: #fff;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2); // Adjusted to rem units
+    display: flex;
+    flex-direction: column;
+
+    img {
+      max-width: 100%;
+      max-height: 60%;
+      height: auto;
+      margin-bottom: 1rem; // Adjusted margin for spacing
+    }
+
+    .card-content {
+      flex: 1;
+    }
+
+    h3 {
+      font-size: 3rem; // 12px (1.2 * base-font-size)
+      margin-top: 1rem; // 10px converted to rem
+    }
+
+    p {
+      font-size: 1.5rem; // 10px (1 * base-font-size)
+      color: #666;
+      margin: 0.5rem 0; // Adjusted margin for spacing
+    }
+
+    @media screen and (max-width: 48rem) {
+      // 480px converted to rem
+      width: calc(50% - 2rem);
+    }
+
+    @media screen and (max-width: 30rem) {
+      // 300px converted to rem
+      width: 100%;
+    }
+  }
+}

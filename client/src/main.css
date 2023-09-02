@@ -327,6 +327,56 @@ nav .menu li a:hover {
     margin-bottom: 2rem;
   }
 }
+.real-estate-list {
+  text-align: center;
+}
+.real-estate-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.real-estate-list .real-estate-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.real-estate-list .real-estate-card {
+  width: calc(33.33% - 2rem);
+  margin: 1rem;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+.real-estate-list .real-estate-card img {
+  max-width: 100%;
+  max-height: 60%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.real-estate-list .real-estate-card .card-content {
+  flex: 1;
+}
+.real-estate-list .real-estate-card h3 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+.real-estate-list .real-estate-card p {
+  font-size: 1.5rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+@media screen and (max-width: 48rem) {
+  .real-estate-list .real-estate-card {
+    width: calc(50% - 2rem);
+  }
+}
+@media screen and (max-width: 30rem) {
+  .real-estate-list .real-estate-card {
+    width: 100%;
+  }
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
